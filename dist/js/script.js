@@ -1,3 +1,4 @@
+// работа гамбургера
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
       close = document.querySelector('.menu__close');
@@ -9,4 +10,12 @@ hamburger.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     menu.classList.remove('active');
+});
+
+// автоматический пересчет процентов
+const counters = document.querySelectorAll('.skills__rating-counter'),
+      lines = document.querySelectorAll('.skills__rating-line span');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
 });
