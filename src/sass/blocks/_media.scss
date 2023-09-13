@@ -1,0 +1,294 @@
+@media (max-width: 1290px) {
+    .sidepanel {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        padding-bottom: 50px;
+    }
+    .about {
+        padding-top: 60px;
+        &__wrapper {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+        &__skills {
+            column-gap: 20px;
+            grid-template: repeat(2, minmax(115px , auto)) / repeat(2, 235px);
+            &-item {
+                column-gap: 15px;
+                grid-template-columns: 40px 190px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 50px 30px 0 30px;
+            column-gap: 50px;
+        }
+    }
+    .skills {
+        &__wraper{
+            grid-template-columns: repeat(3,270px);
+            justify-content: space-around;
+            gap: 30px;
+        }
+        &__rating {
+            grid-template-columns: repeat(2,350px);
+            justify-content: space-around;
+        }
+    }
+    .portfolio {
+        &__wraper {
+            // grid-template: repeat(2,280px)/repeat(3,280px);
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 15px;
+            .horizonal , .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+            &-item {
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .contacts {
+        &__wraper {
+            padding: 0 10px 90px 10px;
+            grid-template-columns: 350px 525px;
+        }
+        &__form {
+            grid-template: 45px 185px 45px/repeat(2,250px);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &_fz36 {
+            font-size: 30px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+            column-gap: 30px;
+        }
+        &__skills {
+            grid-template-columns: 360px;
+            grid-auto-rows: minmax(115px , auto);
+            &-item {
+                grid-template-columns: 40px 300px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 500px;
+            grid-auto-rows: auto;
+            row-gap: 50px;
+        }
+    }
+    .skills {
+        &__wraper {
+            grid-template-columns: repeat(2,270px);
+        }
+    }
+    .price {
+        &__wraper {
+            grid-template-columns: repeat(auto-fit, 350px);
+            padding: 20px 0px 0 0px;
+        }
+    }
+    .contacts {
+        &__wraper {
+            padding: 0 0px 40px 0px;
+            grid-template-columns: 300px 400px;
+        }
+        &__form {
+            grid-template: 45px 185px 45px/repeat(2,190px);
+        }
+        &__triggers {
+            grid-template-columns: 180px 180px;
+            justify-content: space-between;
+        }
+        &__btn {
+            padding: 10px;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 28px;
+        }
+    }
+    .promo {
+        &__title {
+            line-height: 29px;
+            width: 300px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template: 400px auto auto / 1fr;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            &-item {
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
+        }
+
+    }
+    .skills {
+        &__wraper{
+            gap: 10px;
+        }
+        &__rating {
+            margin-top: 50px;
+            grid-template-columns: 350px;
+        }
+    }
+    .portfolio {
+        margin-top: 40px;
+    }
+    .price {
+        padding-top: 40px;
+        &__wraper {
+            margin-top: 20px;
+            justify-content: center;
+        }
+    }
+    .contacts {
+        padding-top: 60px;
+        &__photo {
+            display: none;
+        }
+        &__wraper {
+            grid-template-columns: unset;
+        }
+        &__form {
+            grid-template: 45px 185px 45px/repeat(2,260px);
+            column-gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 26px;
+        }
+        &_fz336 {
+            font-size: 24px;
+        }
+    }   
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .promo {
+        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+        &__btns {
+            margin-top: 32px;
+        }
+    } 
+    .about {
+        &__wrapper {
+            grid-template: 320px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 280px;
+            padding: 50px 10px 0 10px;
+        }
+    }
+    .skills {
+        &__wraper {
+            grid-template-columns: 270px;
+        }
+        &__rating {
+            grid-template-columns: 300px;
+            &-line {
+                width: 300px;
+            }
+        }
+    }
+    .price {
+        &__wraper {
+            grid-template-columns: repeat(auto-fit, 300px);
+        }
+        &__item {
+            grid-template-columns: minmax(158px,auto) minmax(121px, auto);
+            grid-template-rows:minmax(21px, auto) 18px;
+            grid-auto-rows: minmax(21px, auto);
+        }
+        &__descr{
+            &-mt {
+                margin-top: 11px;
+            }
+        }
+    }
+    .contacts {
+        padding-bottom: 180px;
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
+        }
+    }
+}
